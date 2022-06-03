@@ -2,8 +2,6 @@ const term = new Terminal({
 	cursorStyle: "block",
 	cursorBlink: true,
 	fontSize:	 18,
-	//rows:		 40,
-	//cols:		 170,
 	theme: {
 		background:	'#4f545c',
 		cursor:		'#ffffff',
@@ -36,14 +34,12 @@ function print_working_directory(term)
 
 function fetch_subject(term)
 {
-	console.log(fetch('README.md', {mode: 'no-cors'}).then(obj => {
-		//document.getElementById('content').innerHTML = marked.parse());
-		console.log(obj.text().then(data => {
+	fetch('README.md', {mode: 'no-cors'}).then(obj => {
+		obj.text().then(data => {
 			document.getElementById('content').innerHTML = marked.parse(data);
-		}));
-	}));
+		});
+	});
 }
-
 
 var callbacks = [
 				['clear', clear_console, 'clear console\n'],
