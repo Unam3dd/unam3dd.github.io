@@ -51,4 +51,4 @@ jobs:
       - run: hexo deploy
       - run: echo "Building docs folder..."
       - run: mv public docs
-      - run: echo "lol" > test.txt
+      - run: git add docs && git commit -m "push files" && git push
