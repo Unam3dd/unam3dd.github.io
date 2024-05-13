@@ -1,0 +1,18 @@
+version: "3.9"
+
+networks:
+  myblog:
+    driver:
+      bridge
+
+services:
+  hexo:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    hostname: hexo
+    restart: always
+    ports:
+      - 4000:4000
+    networks:
+      - myblog

@@ -4,12 +4,12 @@
 
 # Site
 title: Unam3dd Blog
-subtitle: 'Blog about Low level programming and CyberSecurity'
-description: 'My blog'
-keywords:
-author: Unam3dd (sam0verfl0w)
+subtitle: 'My Personnal blog'
+description: 'This is my personnal blog'
+keywords: programming, cyber-security, low-level
+author: Unam3dd
 language: en
-timezone: ''
+timezone: 'Europe/Paris'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
@@ -40,18 +40,20 @@ external_link:
   exclude: ''
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true
+marked:
+  prependRoot: true
+  postAsset: true
 relative_link: false
 future: true
+syntax_highlighter: highlight.js
 highlight:
-  enable: true
   line_number: true
   auto_detect: false
   tab_replace: ''
   wrap: true
   hljs: false
 prismjs:
-  enable: false
   preprocess: true
   line_number: true
   tab_replace: ''
@@ -102,7 +104,4 @@ theme: cactus
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: git
-  repo: git@github.com:Unam3dd/unam3dd.github.io
-  branch: gh-pages
-  message: upload public
+  type: ''
