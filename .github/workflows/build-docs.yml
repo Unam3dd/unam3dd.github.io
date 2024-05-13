@@ -1,0 +1,45 @@
+# This workflow uses actions that are not certified by GitHub.
+# They are provided by a third-party and are governed by
+# separate terms of service, privacy policy, and support
+# documentation.
+
+# A sample workflow which sets up Snyk to analyze the full Snyk platform (Snyk Open Source, Snyk Code,
+# Snyk Container and Snyk Infrastructure as Code)
+# The setup installs the Snyk CLI - for more details on the possible commands
+# check https://docs.snyk.io/snyk-cli/cli-reference
+# The results of Snyk Code are then uploaded to GitHub Security Code Scanning
+#
+# In order to use the Snyk Action you will need to have a Snyk API token.
+# More details in https://github.com/snyk/actions#getting-your-snyk-token
+# or you can signup for free at https://snyk.io/login
+#
+# For more examples, including how to limit scans to only high-severity issues
+# and fail PR checks, see https://github.com/snyk/actions/
+
+name: Build docs - Action
+
+on:
+  push:
+    branches: ["gh-pages"]
+  pull_request:
+    branches: ["gh-pages"]
+
+permissions:
+  contents: write
+
+jobs:
+  build_docs:
+    permissions:
+      contents: write
+      security-events: write
+      actions: write
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
+      - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
+      - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
+      - name: Check out repository code
+        uses: actions/checkout@v4
+      - run: echo "💡 The ${{ github.repository }} repository has been cloned in the container."
+      - run: hexo deploy
+      - run: mv public docs
