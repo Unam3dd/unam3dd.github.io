@@ -25,7 +25,7 @@ on:
     branches: ["main"]
 
 permissions:
-  contents: write-all
+  contents: write
 
 jobs:
   build_docs:
@@ -38,19 +38,26 @@ jobs:
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
       - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
       - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
+      
       - name: Check out repository code
         uses: actions/checkout@v4
       - run: echo "💡 The ${{ github.repository }} repository has been cloned in the container."
       - run: echo "Installing NodeJS..."
       - uses: actions/checkout@v4
+
       - name: Use Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20.x'
+
+      - name: Build Blog files
       - run: cd blog && npm install hexo-cli -g && npm install .
       - run: rm -rf blog/public
       - run: cd blog && hexo deploy
-      - run: echo "Building docs folder..."
-      - run: git config --global user.email "samtalespro@gmail.com"
-      - run: git config --global user.name "Unam3dd"
-      - run: git add -f blog/public/ && git commit -m "push files" && git push blog
+
+      - name: Deploy files
+        uses: s0/git-publish-subdir-action@develop
+        env:
+          REPO: self
+          BRANCH: blog
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
