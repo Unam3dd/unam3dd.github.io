@@ -1,4 +1,4 @@
-docs/node_modules
-docs/package-lock.json
-docs/db.json
-docs/public
+blog/node_modules
+blog/package-lock.json
+blog/db.json
+blog/public

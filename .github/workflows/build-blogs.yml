@@ -47,10 +47,10 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20.x'
-      - run: cd docs && npm install hexo-cli -g && npm install .
-      - run: cd docs && hexo deploy
+      - run: cd blog && npm install hexo-cli -g && npm install .
+      - run: rm -rf blog/public
+      - run: cd blog && hexo deploy
       - run: echo "Building docs folder..."
-      - run: rm -rf docs/blog && mv docs/public docs/blog
       - run: git config --global user.email "samtalespro@gmail.com"
       - run: git config --global user.name "Unam3dd"
       - run: git add -f docs/blog && git commit -m "push files" && git push

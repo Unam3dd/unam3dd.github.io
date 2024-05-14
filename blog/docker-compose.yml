@@ -5,7 +5,6 @@ networks:
     driver: bridge
 
 services:
-
   hexo-build:
     container_name: hexo-build
     user: root
@@ -17,6 +16,7 @@ services:
       - ./:/app/
     hostname: hexo-build
     restart: always
+    profiles: [dev]
 
   hexo-server:
     container_name: hexo-server
@@ -34,3 +34,4 @@ services:
       - 4000:4000
     networks:
       - myblog
+    profiles: [dev]
