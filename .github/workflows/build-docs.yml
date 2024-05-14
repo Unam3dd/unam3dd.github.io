@@ -50,7 +50,7 @@ jobs:
       - run: npm install hexo-cli -g && npm install .
       - run: hexo generate --watch
       - run: echo "Building docs folder..."
-      - run: mv public docs
+      - run: rm -rf docs && mv public docs
       - run: git config --global user.email "samtalespro@gmail.com"
       - run: git config --global user.name "Unam3dd"
       - run: git add -f docs && git commit -m "push files" && git push
