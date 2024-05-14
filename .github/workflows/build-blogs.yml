@@ -37,3 +37,4 @@ jobs:
           REPO: self
           BRANCH: blog
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: echo "Deploy on blog branch..."
