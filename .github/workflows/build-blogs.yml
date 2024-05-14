@@ -16,7 +16,7 @@
 # For more examples, including how to limit scans to only high-severity issues
 # and fail PR checks, see https://github.com/snyk/actions/
 
-name: Build docs - Action
+name: Build Action
 
 on:
   push:
@@ -37,10 +37,6 @@ jobs:
     steps:
       - name: Check out repository code
         uses: actions/checkout@v4
-      
-      - run: echo "💡 The ${{ github.repository }} repository has been cloned in the container."
-      - run: echo "Installing NodeJS..."
-      - uses: actions/checkout@v4
 
       - name: Use Node.js
         uses: actions/setup-node@v4
