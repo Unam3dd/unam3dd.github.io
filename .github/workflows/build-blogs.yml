@@ -32,7 +32,7 @@ jobs:
       - run: cd blog && hexo deploy
 
       - name: Deploy
-      - run: echo "Deploy on blog branch..."
+        run: echo "Deploy on blog branch..."
         uses: s0/git-publish-subdir-action@v2.6.0
         env:
           REPO: self
