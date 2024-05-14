@@ -1,5 +1,4 @@
-node_modules
-package-lock.json
-db.json
-docs
-public
+blog/node_modules
+blog/package-lock.json
+blog/db.json
+blog/public
