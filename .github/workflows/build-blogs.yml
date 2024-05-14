@@ -20,9 +20,9 @@ name: Build docs - Action
 
 on:
   push:
-    branches: ["gh-pages"]
+    branches: ["main"]
   pull_request:
-    branches: ["gh-pages"]
+    branches: ["main"]
 
 permissions:
   contents: write
@@ -53,4 +53,4 @@ jobs:
       - run: echo "Building docs folder..."
       - run: git config --global user.email "samtalespro@gmail.com"
       - run: git config --global user.name "Unam3dd"
-      - run: git add -f docs/blog && git commit -m "push files" && git push
+      - run: git add -f docs/blog && git commit -m "push files" && git push origin/blog
