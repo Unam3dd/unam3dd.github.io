@@ -2,7 +2,10 @@
 title: LIBFT Project Report 📘
 date: 2024-05-13 15:39:22
 tags:
+    - algorithms
+    - unix-logic
     - programming
+    - rigor
     - c
 categories:
     - dev
