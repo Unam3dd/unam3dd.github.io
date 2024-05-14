@@ -32,9 +32,9 @@ jobs:
       - run: cd blog && hexo deploy
 
       - name: Deploy
+      - run: echo "Deploy on blog branch..."
         uses: s0/git-publish-subdir-action@v2.6.0
         env:
           REPO: self
           BRANCH: blog
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: echo "Deploy on blog branch..."
