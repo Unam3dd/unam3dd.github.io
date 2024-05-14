@@ -47,8 +47,8 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20.x'
-      - run: npm install hexo-cli -g && npm install .
-      - run: hexo deploy
+      - run: cd docs && npm install hexo-cli -g && npm install .
+      - run: cd docs && hexo deploy
       - run: echo "Building docs folder..."
       - run: rm -rf docs/blog && mv docs/public docs/blog
       - run: git config --global user.email "samtalespro@gmail.com"
