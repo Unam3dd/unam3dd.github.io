@@ -55,8 +55,8 @@ jobs:
       - run: rm -rf blog/public
       - run: cd blog && hexo deploy
 
-      - name: Deploy files
-        uses: s0/git-publish-subdir-action@develop
+      - name: Deploy
+        uses: s0/git-publish-subdir-action@v2.6.0
         env:
           REPO: self
           BRANCH: blog
