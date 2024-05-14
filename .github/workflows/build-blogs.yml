@@ -25,14 +25,14 @@ on:
     branches: ["main"]
 
 permissions:
-  contents: write
+  contents: write-all
 
 jobs:
   build_docs:
     permissions:
-      contents: write
-      security-events: write
-      actions: write
+      contents: write-all
+      security-events: write-all
+      actions: write-all
     runs-on: ubuntu-latest
     steps:
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
