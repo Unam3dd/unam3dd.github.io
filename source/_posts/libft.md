@@ -76,7 +76,7 @@ In contrast, `AVX`, being more recent, expands this capability by enabling `vect
 
 In summary, while `SSE` is effective for operations on smaller and more common data sets, `AVX` extends this capability to handle larger data amounts, making it particularly suitable for heavier workloads and applications requiring increased parallelism.
 
-This project is still ongoing and should soon come to fruition. The main branch will be `42`, after being validated and corrected. Another branch, `latest`, will be available for using this library.
+This project is still ongoing and should soon come to fruition. The main branch will be `42`, after being validated and corrected. Another branch, `latest`, will be available for using this library
 
 ## Subject
 Download the libft subject [here](/images/libft.pdf)

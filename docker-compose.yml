@@ -5,12 +5,30 @@ networks:
     driver: bridge
 
 services:
-  hexo:
-    container_name: hexo
+
+  hexo-build:
+    container_name: hexo-build
+    user: root
     build:
       context: .
       dockerfile: Dockerfile
-    hostname: hexo
+    command: ["generate", "--watch"]
+    volumes:
+      - ./:/app/
+    hostname: hexo-build
+    restart: always
+
+  hexo-server:
+    container_name: hexo-server
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: ["server", "-s"]
+    volumes:
+      - ./:/app/
+    depends_on:
+      - hexo-build
+    hostname: hexo-server
     restart: always
     ports:
       - 4000:4000
