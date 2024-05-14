@@ -1,8 +1,0 @@
-.DS_Store
-Thumbs.db
-*.iml
-*.log
-node_modules/
-.deploy*/
-.idea
-.vscode
