@@ -18,10 +18,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository code
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
       - name: Use Node.js
-        uses: actions/setup-node@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: '20.x'
 
@@ -31,8 +31,7 @@ jobs:
       - run: cd blog && hexo deploy
 
       - name: Deploy
-        run: echo "Deploy on blog branch..."
-        uses: s0/git-publish-subdir-action@v2.6.0
+      - uses: s0/git-publish-subdir-action@v2.6.0
         env:
           REPO: self
           BRANCH: blog
