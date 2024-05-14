@@ -30,9 +30,9 @@ permissions:
 jobs:
   build_docs:
     permissions:
-      contents: write-all
-      security-events: write-all
-      actions: write-all
+      contents: write
+      security-events: write
+      actions: write
     runs-on: ubuntu-latest
     steps:
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
