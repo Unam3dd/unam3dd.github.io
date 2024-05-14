@@ -4,9 +4,9 @@ date: 2024-05-13 15:39:22
 tags:
     - programming
     - c
-    - libft
 categories:
     - dev
+    - 42project
 ---
 
 ## Introduction
@@ -48,8 +48,8 @@ The libft project is a foundational exercise that helps students develop essenti
 ```c atoi.c
 int	ft_atoi(char *str)
 {
-	long long			to_dec = 0;
-	int				    neg = 1;
+	long long   to_dec = 0;
+	int			neg = 1;
 
 	while (!(*str ^ ' ') || (*str >= '\t' && *str <= '\r'))
 		str = (char *)-~(unsigned long long)str; // Wtff dude

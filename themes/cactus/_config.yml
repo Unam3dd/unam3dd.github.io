@@ -37,8 +37,6 @@ social_links:
   -
     icon: linkedin
     link: https://www.linkedin.com/in/sam-tales-58406a265
-  - icon: discord
-    link: sam0verfl0w
 
 # Customize the overview with displaying a tagcloud on the index page.
 # Options: https://hexo.io/docs/helpers.html#tagcloud
@@ -125,7 +123,7 @@ favicon:
 
 # The color scheme that should be used to highlight codeblocks.
 # See source/css/_highlight for a list of all available color schemes.
-highlight: white
+highlight: darkula
 
 # Set the color scheme.
 # Available color schemes are 'dark', 'light', 'classic' and 'white'.

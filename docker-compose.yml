@@ -2,11 +2,11 @@ version: "3.9"
 
 networks:
   myblog:
-    driver:
-      bridge
+    driver: bridge
 
 services:
   hexo:
+    container_name: hexo
     build:
       context: .
       dockerfile: Dockerfile
