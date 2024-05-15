@@ -44,8 +44,7 @@ The So Long project serves as an opportunity for students to apply their program
 🎮 Let the coding adventure begin! 🚀
 
 ## Resources
-
 [Project](https://github.com/Unam3dd/SoLong)
 
 ## Subject
-![Subject](/images/so_long.pdf)
+download the subject just [here](/images/so_long.pdf)
