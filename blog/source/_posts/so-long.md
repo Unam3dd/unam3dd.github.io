@@ -14,7 +14,7 @@ categories:
 date: 2024-05-15 14:15:06
 ---
 
-![ScreenShot](so_long.png)
+![ScreenShot](/images/so_long.png)
 
 ## Introduction
 So Long is a project assigned within the curriculum of 42 School, an innovative coding school known for its project-based learning approach. In this project, students are tasked with creating a 2-dimensional game using the C programming language and the minilibx library. The objective is to demonstrate proficiency in C programming, game development concepts, and graphical user interface (GUI) implementation.
