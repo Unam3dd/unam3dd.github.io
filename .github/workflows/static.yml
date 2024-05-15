@@ -34,7 +34,10 @@ jobs:
         with:
           name: page
           path: .
-          retention-day: 90
+          retention-days: 90
+          compression-level: 9
+          overwrite: true
+          if-no-files-found: error
       - uses: actions/download-artifact@main
         with:
           name: page
