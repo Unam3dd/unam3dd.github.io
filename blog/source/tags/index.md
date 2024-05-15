@@ -1,4 +1,4 @@
 ---
 title: tags
-type: tag
+type: tags
 ---
