@@ -27,7 +27,10 @@ jobs:
           node-version: '20.x'
 
       - name: Build blog files
-        run: npm install hexo-cli -g && cd blog && npm install . && rm -rf public && hexo deploy
+        run: npm install hexo-cli -g && rm -rf ./blog/public && cd blog && npm install . && hexo deploy
+
+      - name: Copy workflow
+        run: mkdir -p ./blog/public/.github/workflows/ && cp -r .github/workflows/*.yml ./blog/public/.github/workflows/
 
       - name: Deploy blog files
         uses: s0/git-publish-subdir-action@develop
