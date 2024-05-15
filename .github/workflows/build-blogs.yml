@@ -37,6 +37,6 @@ jobs:
         env:
           REPO: self
           BRANCH: blog
-          FOLDER: blog/public/
+          FOLDER: blog/
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
