@@ -38,7 +38,7 @@ jobs:
           compression-level: 9
           overwrite: true
           if-no-files-found: error
-      - uses: actions/download-artifact@main
+      - uses: actions/download-artifact@v4
         with:
           name: page
           path: .
