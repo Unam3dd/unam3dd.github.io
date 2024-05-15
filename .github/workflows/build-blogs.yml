@@ -27,8 +27,5 @@ jobs:
           node-version: '20.x'
 
       - name: Build blog files
-        run: npm install hexo-cli -g
-        run: cd blog && npm install .
-        run: rm -rf blog/public
-        run: cd blog && hexo deploy
+        run: npm install hexo-cli -g && cd blog && npm install . && rm -rf public && hexo deploy
 
