@@ -30,19 +30,14 @@ jobs:
         uses: actions/checkout@v4
         with:
             show-progress: true
-      - uses: actions/upload-artifact@v4
-        with:
-          name: page
-          path: .
-          retention-days: 90
-          compression-level: 9
-          overwrite: true
-          if-no-files-found: error
       - uses: actions/configure-pages@v4
       - uses: actions/upload-pages-artifact@v3
         with:
           name: page
           path: .
+          compression-level: 9
+          overwrite: true
+          if-no-files-found: error
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
