@@ -30,7 +30,7 @@ jobs:
         uses: actions/checkout@v4
         with:
             show-progress: true
-      - uses: actions/upload-artifact@main
+      - uses: actions/upload-artifact@v4
         with:
           name: page
           path: .
@@ -42,8 +42,8 @@ jobs:
         with:
           name: page
           path: .
-      - uses: actions/configure-pages@main
-      - uses: actions/upload-pages-artifact@main
+      - uses: actions/configure-pages@v4
+      - uses: actions/upload-pages-artifact@v4
         with:
           name: page
           path: .
