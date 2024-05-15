@@ -1,5 +1,5 @@
 ---
-title: FT_PRINTF Report 📘
+title: 42 FT_PRINTF Report 📘
 description: This project is clear and efficient. You need to recode printf. You'll then be able to reuse it in future projects. This project focuses on variable-size arguments.
 tags:
   - algorithms

@@ -1,5 +1,6 @@
 ---
-title: LIBFT Project Report 📘
+title: 42 LIBFT Project Report 📘
+description: This first project as a 42 student will enable you to consolidate your pool skills. You'll be recoding a number of functions from the standard C library, as well as other utility functions that you'll reuse throughout your course. 
 date: 2024-05-13 15:39:22
 tags:
     - algorithms
