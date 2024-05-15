@@ -33,11 +33,10 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: myblog
           path: '.'
-          if-no-files-found: error
           retention-days: 90
       - name: Deploy to GitHub Pages
         id: deployment
