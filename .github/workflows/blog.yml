@@ -35,6 +35,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./blog/public/
+          if-no-files-found: error
 
   deploy:
     environment:
