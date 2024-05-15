@@ -12,8 +12,6 @@ categories:
     - 42project
 ---
 
-## TEST
-
 ## Introduction
 The **Libft** project is a fundamental project in the curriculum of many programming courses, particularly in those teaching the C programming language. In this project, students are tasked with creating their own library of essential functions in C. The goal is to gain a deeper understanding of C programming, standard library functions, and writing modular and reusable code.
 
