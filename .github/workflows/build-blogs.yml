@@ -28,6 +28,9 @@ jobs:
 
       - name: Build blog files
         run: npm install hexo-cli -g && cd blog && npm install . && rm -rf public && hexo deploy
+      
+      - name: Copy github actions in public folder
+        run: cp -r .github/ ./blog/public/
 
       - name: Deploy blog files
         uses: s0/git-publish-subdir-action@develop
