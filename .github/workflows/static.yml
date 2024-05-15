@@ -35,7 +35,10 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
+          name: myblog
           path: '.'
+          if-no-files-found: error
+          retention-days: 90
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
