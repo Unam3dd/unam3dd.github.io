@@ -16,6 +16,7 @@ jobs:
       security-events: write
       actions: write
     runs-on: ubuntu-latest
+
     steps:
       - name: Check out repository code
       - uses: actions/checkout@v4
@@ -26,13 +27,7 @@ jobs:
           node-version: '20.x'
 
       - name: Build Blog files
-      - run: cd blog && npm install hexo-cli -g && npm install .
+      - run: npm install hexo-cli -g
+      - run: cd blog && npm install .
       - run: rm -rf blog/public
       - run: cd blog && hexo deploy
-
-        #      - name: Deploy
-        #- uses: s0/git-publish-subdir-action@v2.6.0
-        #env:
-        #  REPO: self
-        #  BRANCH: blog
-        #  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
