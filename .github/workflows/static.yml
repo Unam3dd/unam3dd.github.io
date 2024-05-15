@@ -30,14 +30,23 @@ jobs:
         uses: actions/checkout@v4
         with:
             show-progress: true
+      - uses: actions/upload-artifact@master
+        with:
+          name: page
+          path: .
+          if-no-files-found: error
+      - name: Download artifact..
+        uses: actions/download-artifact@master
+        with:
+          name: page
+          path: .
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-pages-artifact@v5
         with:
-          name: myblog
-          path: '.'
-          retention-days: 90
+          name: page
+          path: .
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
