@@ -18,6 +18,8 @@ nav:
   about: /about/
   articles: /archives/
   search: /search/
+  tag: /tags/
+  category: /categories/
   projects: https://github.com/Unam3dd
 
 
