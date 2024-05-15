@@ -35,7 +35,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./blog/public/
-          if-no-files-found: error
+          retention-days: 30
 
   deploy:
     environment:
