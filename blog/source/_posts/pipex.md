@@ -15,7 +15,7 @@ categories:
 date: 2024-05-16 11:19:11
 ---
 
-![[/image/Pasted image 20240513100349.png]]
+![[/images/pipex.png]]
 
 # Project Overview: Pipex 42 School Project
 
