@@ -3,7 +3,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="HandheldFriendly" content="True">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdnjs.cloudflare.com https://github.com https://*.twitter.com https://linkedin.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://github.com https://*.twitter.com https://linkedin.com https://www.google-analytics.com; font-src 'self'; connect-src 'self'; frame-src 'self';">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdnjs.cloudflare.com https://github.com https://*.twitter.com https://linkedin.com https://www.google-analytics.com https://*.cdnjs.com/; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://github.com https://*.twitter.com https://linkedin.com https://www.google-analytics.com https://*.cdnjs.com/; font-src 'self' https://*.cdnjs.com/; connect-src 'self' https://*.cloudflare.com/ https://github.com/ https://twitter.com/ https://*.cdnjs.com/ ; frame-src 'self' https://*.cdnjs.com/;">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
     <%- open_graph({
         image:          thumbnail(page),
