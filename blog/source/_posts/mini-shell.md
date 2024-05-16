@@ -1,5 +1,5 @@
 ---
-title: Mini-Shell Report📘
+title: 42 Mini-Shell Report📘
 description: L'objectif de ce projet est de créer un simple shell. 
 tags:
   - programming
