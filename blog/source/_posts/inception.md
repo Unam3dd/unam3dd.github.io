@@ -1,5 +1,5 @@
 ---
-title: Inception Report📘
+title: 42 Inception Report📘
 tags:
   - dev-ops
   - namespace

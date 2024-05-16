@@ -1,5 +1,5 @@
 ---
-title: NetPractice Report 📘
+title: 42 NetPractice Report 📘
 description: NetPractice aims to help you discover the network through practical case studies.
 tags:
   - network
