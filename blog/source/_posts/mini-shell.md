@@ -1,6 +1,6 @@
 ---
 title: 42 Mini-Shell Report📘
-description: L'objectif de ce projet est de créer un simple shell. 
+description: the aim of this project is to create a simple shell
 tags:
   - programming
   - c
