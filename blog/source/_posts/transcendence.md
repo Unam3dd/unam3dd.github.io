@@ -19,9 +19,9 @@ categories:
 date: 2024-05-16 16:23:29
 ---
 
-![nestjs](/images/nestjs.png)
-![nginx](/images/nginx.png)
-![snyk](/images/snyk.png)
+![Nestjs](/images/nestjs.png)
+![Nginx](/images/nginx.png)
+![Snyk](/images/snyk.png)
 
 ## Project Description
 Transcendence is an ambitious project assigned at 42 School, aimed at creating a dynamic web platform that seamlessly integrates social networking features with real-time multiplayer gaming. The project leverages modern technologies such as NestJS for REST API development, AngularJS for frontend implementation, and Socket.IO for WebSocket communication. Additionally, Transcendence implements reverse proxy setup with NGINX for backend services and incorporates Single Sign-On (SSO) authentication with the 42 API, along with Two-Factor Authentication (2FA) for enhanced security.
@@ -100,4 +100,4 @@ Transcendence represents a cutting-edge project that combines social networking 
 
 ## Subject
 
-![Subect](/images/transcendence.pdf)
+you can download the subject just [here](/images/transcendence.pdf)
