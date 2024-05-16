@@ -61,7 +61,9 @@ The Minishell project immerses students into the intricate world of Unix shells,
 ## Builtins required for the project
 `Minishell` supports a set of built-in commands that are executed directly by the shell without spawning a new process, providing functionalities such as changing directories (`cd`), printing the current working directory (`pwd`), and managing environment variables (`export`, `unset`).
 
-![msh](/images/minishell.png)
+## Note
+
+The minishell I created back then has many issues, so I plan to redo it purely for pleasure, making it more optimized. I'll avoid using readlines this time, as it causes memory leaks, even if they are only unreachable and not definitly lost.
 
 ## References
 - [Unix Shell](https://en.wikipedia.org/wiki/Unix_shell)
@@ -81,4 +83,4 @@ The Minishell project immerses students into the intricate world of Unix shells,
 Overall, Minishell is a challenging yet rewarding project that allows students to delve into the intricacies of Unix shells, solidify their understanding of system programming concepts, and hone their coding skills through practical application and hands-on experience. 🚀🐧🔧📚💻🔍.
 
 ## Subject
-![Subject](/images/minishell.pdf)
+You can download the subject just [here](/images/minishell.pdf)
