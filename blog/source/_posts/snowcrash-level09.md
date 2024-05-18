@@ -3,6 +3,7 @@ title: 42 SnowCrash Level09 - Walkthrough 👾
 tags:
   - ctf
   - snowcrash
+  - python
 categories:
   - ctfs
   - 42project
