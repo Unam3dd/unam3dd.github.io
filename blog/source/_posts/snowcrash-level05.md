@@ -1,7 +1,7 @@
 ---
 title: 42 SnowCrash Level05 - Walkthrough 👿
 tags:
-  - ctfs
+  - ctf
   - snowcrash
   - 42project
   - services
