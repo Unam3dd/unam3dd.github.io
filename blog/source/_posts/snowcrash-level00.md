@@ -13,7 +13,7 @@ date: 2024-05-17 15:28:02
 
 # Welcome to SnowCrash
 
-![[snowcrash.png]]
+![snowcrash](/images/snowcrash.png)
 
 Hello guys, today I'm going to show you level 00 of the SnowCrash project from 42 school.
 
