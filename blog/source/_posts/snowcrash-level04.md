@@ -1,5 +1,5 @@
 ---
-title: SnowCrash level04 - Walkthrough 👾 
+title: 42 SnowCrash level04 - Walkthrough 👾 
 tags:
   - ctf
   - cgi
@@ -7,6 +7,7 @@ tags:
   - exploit
   - command-injection
   - web
+  - 42project
 categories:
   - ctfs
   - 42project
