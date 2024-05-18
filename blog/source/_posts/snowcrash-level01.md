@@ -1,5 +1,5 @@
 ---
-title: 42 SnowCrash Level 01 - Walkthrough 👾
+title: 42 SnowCrash Level01 - Walkthrough 👾
 tags:
   - ctf
   - 42project
@@ -13,7 +13,7 @@ categories:
 date: 2024-05-18 13:31:13
 ---
 
-![snowcrash](snowcrash.png)
+![snowcrash](/images/snowcrash.png)
 
 ##  Introduction
 
