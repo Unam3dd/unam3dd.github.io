@@ -19,7 +19,7 @@ Hello guys, today I'm going to show you level 00 of the SnowCrash project from 4
 
 First of all, we need to download the SnowCrash ISO and create a virtual machine with VirtualBox or any other virtualization tool such as VMWare. You can also use a Vagrant file to build your virtual machine.
 
-To find our machine on our network, you can see your netmask with commands such as `ipconfig` or `ip a`.
+To find our machine on our network, you can see your netmask with commands such as `ifconfig` or `ip a`.
 
 I'm running the following command just above and it shows something like that:
 
