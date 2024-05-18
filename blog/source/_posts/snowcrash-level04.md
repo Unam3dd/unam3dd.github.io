@@ -15,9 +15,24 @@ date: 2024-05-18 14:37:32
 
 ![snowcrash](/images/snowcrash.png)
 
-### Introduction
+## Introduction
 
 In level 04, we encountered a Perl CGI script (`level04.pl`) vulnerable to command injection. By manipulating the input parameter, we were able to execute arbitrary commands on the server.
+
+### Perl CGI Code
+
+```perl
+level04@SnowCrash:~$ cat level04.pl 
+#!/usr/bin/perl
+# localhost:4747
+use CGI qw{param};
+print "Content-type: text/html\n\n";
+sub x {
+    $y = $_[0];
+    print `echo $y 2>&1`;
+}
+x(param("x"));
+```
 
 ### Vulnerability
 
