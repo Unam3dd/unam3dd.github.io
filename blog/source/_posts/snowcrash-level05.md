@@ -11,6 +11,8 @@ categories:
 date: 2024-05-18 14:50:03
 ---
 
+![snowcrash](/images/snowcrash.png)
+
 
 ### Introduction
 
