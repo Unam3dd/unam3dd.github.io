@@ -1,5 +1,5 @@
 ---
-title: 42 SnowCrash Level02 - Walkthrough
+title: 42 SnowCrash Level02 - Walkthrough 👾
 tags:
   - ctf
   - 42project
