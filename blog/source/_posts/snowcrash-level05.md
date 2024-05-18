@@ -41,13 +41,13 @@ In level 05, we need to exploit a script (`openarenaserver`) that executes all s
     ```
     The script iterates through all files in /opt/openarenaserver/, executes them with a time limit of 5 seconds, and then removes them.
 
-3. Exploiting the Script:
+3. **Exploiting the Script**:
     We create a script named xploit containing the getflag command in the /opt/openarenaserver/ directory:
     ```shell
     level05@SnowCrash:~$ echo "'getflag' > /tmp/xploit" > /opt/openarenaserver/xploit
     ```
 
-4. Monitoring the Result:
+4. **Monitoring the Result**:
     We watch the content of /tmp/xploit to capture the flag:
     ```shell
     level05@SnowCrash:~$ watch cat /tmp/xploit
