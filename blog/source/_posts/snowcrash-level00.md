@@ -1,5 +1,5 @@
 ---
-title: 42 SnowCrash - Level00
+title: 42 SnowCrash - Level00 🚀
 tags:
   - cyber-security
   - snowcrash
