@@ -12,6 +12,8 @@ categories:
 date: 2024-05-19 15:49:03
 ---
 
+![snowcrash](/images/snowcrash.png)
+
 ## Introduction
 
 In Level 13 of the SnowCrash project by 42 school, you are provided with a 32-bit binary file named `level13`. When executed, the binary outputs the following message:

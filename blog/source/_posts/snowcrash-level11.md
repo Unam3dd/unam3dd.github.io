@@ -13,6 +13,8 @@ categories:
 date: 2024-05-19 13:26:27
 ---
 
+![snowcrash](/images/snowcrash.png)
+
 ## Introduction
 
 In Level 11, we are provided with a Lua script that starts a server on port 5151. The objective is to exploit a security vulnerability in this script to gain unauthorized access.

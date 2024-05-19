@@ -13,6 +13,8 @@ categories:
 date: 2024-05-19 15:06:08
 ---
 
+![snowcrash](/images/snowcrash.png)
+
 ## Introduction
 
 In Level 12 of the SnowCrash project by 42 school, you are presented with a Perl script running a CGI Web Server on port 4646. Below is the script:
