@@ -1,5 +1,5 @@
 ---
-title: 42 SnowCrash Level11 - Walkthrough
+title: 42 SnowCrash Level11 - Walkthrough 🤖
 tags:
   - ctf
   - snowcrash
