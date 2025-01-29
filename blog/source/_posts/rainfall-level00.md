@@ -102,8 +102,8 @@ This level was a *simple integer comparison check*.
 By passing `423` as an argument, we were able to execute a privileged shell and retrieve the next level's credentials! 🚀
 
 #### 🎯 Key Takeaways:
-1. 🛠️ Understanding stack manipulation (sub esp, 0x20 for local storage).
-2. 🧩 Pointer arithmetic in C (argv[1] is at ebp+0xc).
+1. 🛠️ Understanding stack manipulation (`sub esp, 0x20` ex: allocate memory on stack space).
+2. 🧩 Pointer arithmetic in C (`argv[1]` is at **ebp+0xc**).
 3. 🔥 Exploiting integer comparisons to pop a shell !.
 
 #### 🔓 On to the next level! 🔓
