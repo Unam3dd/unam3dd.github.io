@@ -181,10 +181,12 @@ Finally, you just need to find the system and binsh addresses on the libc, and u
 1 pattern found.
 ```
 
-0x0804854b = ret
-0xb7e6b060 = system
-0xb7e5ebe0 = exit (aligned function)
-0xb7f8cc58 = "/bin/sh"
+#### 🎮 Gadget
+
+- `ret` gadget at `0x0804854b`
+- `system` gadget at `0xb7e6b060`
+- `exit` gadget at `0xb7e5ebe0`
+- string `/bin/sh` at `0xb7f8cc58`
 
 ## 🚀 Exploitation
 
