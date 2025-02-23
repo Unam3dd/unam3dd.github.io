@@ -85,7 +85,9 @@ level2@RainFall:~$ objdump -M intel -d ./level2
 - Inside function `p`, we see a call to `gets()` 📌.
 - The `gets()` function is deprecated ❌ because it does not check input size, making it vulnerable to buffer overflow attacks.
 
-By the way A usage of gets function is unsecure, you can overwrite EIP register and as you know the EIP register is a instruction pointer like (Program Counter PC) is just a simple register which point to the next current instruction which cpu will be execute you can observe that in your gdb with `gef` or `peda`.
+By the way, a usage of `gets` function is unsafe, you can overwrite EIP register and as you know the EIP register is a instruction pointer like (Program Counter PC on RISC architecture) is just a simple register which point to the next current instruction will be executed by the cpu.
+
+You can see that in your gdb with `gef` or `peda` extension or even in gdb by default.
 
 So if we arrive to overwrite the EIP register we can control the flow execution of the program.
 
@@ -101,7 +103,7 @@ Stack level 0, frame at 0xbffff730:
 (gdb) x/x 0xbffff730 - 4
 0xbffff72c:    0x4a
 (gdb) x/4x 0xbffff730 - 4
-0xbffff72c:    0x4a    0x85    0x04    0x08
+0xbffff72c:    0x4a    0x85    0x04    0x08 # (0x0804854a `leave` instruction in main function)
 (gdb) p/d 0xbffff72c - 0xbffff6dc
 $1 = 80
 ```
