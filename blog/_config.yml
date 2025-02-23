@@ -102,7 +102,9 @@ ignore:
 #theme: cactus
 #theme: july
 #theme: react
-theme: terminal
+#theme: terminal
+theme: hexo-theme-icalm
+
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
