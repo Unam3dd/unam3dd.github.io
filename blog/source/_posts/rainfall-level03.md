@@ -284,7 +284,7 @@ We can see that at index 4 our first parameter is still there, so we now know wh
 AAAA 0x41414141
 ```
 
-So were now going to put the address of `m` in the place of our `4's` of course we're on x86-32 bit architecture and this CPU reads memory in little endian.
+So were now going to put the address of `m` in the place of our 4's 'A' of course we're on x86-32 bit architecture and this CPU reads memory in little endian.
 
 So you must convert your address to little endian, So that CPU can read correctly.
 
