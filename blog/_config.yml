@@ -106,6 +106,9 @@ ignore:
 #theme: hexo-theme-icalm
 theme: redefine
 
+info:
+  title: Sam0verfl0w Blog
+
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
