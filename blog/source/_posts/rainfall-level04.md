@@ -90,17 +90,13 @@ has no constant parameter, so if we throw the binary and write `%x` 4 times for 
 Now, if we look at the n function just after the `p` function call, we see that an address from the Data segment `ds:` is written to the eax register.
 The `eax` register is then compared with the value `0x1025544`
 
-if the condition is triggered then the zero flag is set, we execute the system function with the cat command at address 0x08048590 as the first parameter
+if the condition is triggered then the zero flag is set, we execute the system function with the cat command at address `0x08048590` as the first parameter
 
 with the following command we can look at the addresses corresponding to the symbol in the binary
 
 we note that the address compared with the value in the `eax` register is in fact the symbol `m`
 
 so we'll have to write to the location of the `m` symbol we can now create our payload directly with `pwntools`
-
-So like previous level I have write an exploit with `pwntools` to automatize this task.
-
-so we'll have to write to the location of the m symbol we can now create our payload directly with pwntools
 
 ### 🤓 Python Exploit 
 
