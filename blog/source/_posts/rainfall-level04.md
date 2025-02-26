@@ -81,7 +81,7 @@ So, as you can see we have three functions named respectively `main`, `n` and `p
 
 You can see, the main function call `n` function and in `n` function a call to `fgets@plt` is performed and buffer is allocated like the previous level, and read on STDIN.
 
-So we have an entry input user of `0x200` or 512 bytes in decimal, So we have also talk in last previous level about calling convention, remember in x86 32 bits the argument is passed through the stack in LIFO order so the first parameters is the last push on the stack, so you can see the buffer of fgets is pointed by esp the size of the buffer is the second argument because, is present on `esp+0x4` and the latest argument is on `esp+0x8` because in x86 32 bits an address is on 32 bits, so 4 bytes.
+So we have an entry input user of `0x200` or 512 bytes in decimal, So we have also talk in last previous level about calling convention, remember in x86-32 bits the argument is passed through the stack in LIFO order.
 
 So to resume, In the `n` function we can see that it calls the `p` function and if we look a little closer at the `p` function
 we can see that the first parameter is directly the first argument, which shows that `printf`
